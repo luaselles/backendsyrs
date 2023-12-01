@@ -36,6 +36,14 @@ class Produto {
         this.quantidade = novoQuantidade;
     }
 
+    async excluir(db) {
+        await new ProdutoDAO().excluir(this, db)
+    }
+
+    async alterar(db) {
+        await new ProdutoDAO().alterar(this, db)
+    }
+
     async listar(db) {
         const result = await new ProdutoDAO().listar(db);
         let lista = [];
