@@ -36,10 +36,6 @@ class Produto {
         this.quantidade = novoQuantidade;
     }
 
-    async excluir(db) {
-        await new ProdutoDAO().excluir(this, db)
-    }
-
     async alterar(db) {
         await new ProdutoDAO().alterar(this, db)
     }

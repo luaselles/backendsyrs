@@ -7,13 +7,6 @@ module.exports = class ProdutoDAO {
         return result;
     }
 
-    async excluir(acerto, db) {
-        let sql = "DELETE FROM acerto WHERE id = ?";
-        const valor = [acerto.getId()];
-        const result = await db.manipula(sql, valor);
-        return result;
-    }
-
     async listar(db) {
         const sql = "SELECT * FROM produto"
         const result = await db.consulta(sql, null);
