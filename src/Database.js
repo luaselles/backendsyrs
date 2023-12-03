@@ -1,5 +1,5 @@
 const mysql = require('mysql2/promise');
-
+// aurora-grillo@tuamaeaquelaursa.com
 module.exports = new
     class Database {
         constructor() {
@@ -9,9 +9,9 @@ module.exports = new
         async conecta() {
             const config = {
                 host: "sql5.freesqldatabase.com",
-                user: "sql5665072",
-                password: "MMk1GsnCIE",
-                database: "sql5665072",
+                user: "sql5667146",
+                password: "qFQKnI6XQC",
+                database: "sql5667146",
                 port: 3306
             }
             try {

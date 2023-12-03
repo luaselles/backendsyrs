@@ -12,7 +12,6 @@ routes.all('*', function (req, res, next) {
 });
 
 routes.get('/produto', ProdutoCtrl.listarProduto);
-routes.delete('/produto/:id', ProdutoCtrl.deletarProduto);
 routes.put('/produto', ProdutoCtrl.alterarProduto);
 
 routes.get('/acerto', AcertoCtrl.listarAcerto);
